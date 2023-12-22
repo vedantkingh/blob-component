@@ -1,9 +1,32 @@
+"use client";
 import Image from 'next/image'
 import styles from './page.module.css'
+import React, { useState, useEffect } from 'react';
+import common from './styles/common.module.css'
+import CursorCircle from '@/app/components/CursorCircle';
+import AudioAnalyser from 'react-audio-analyser';
 
 export default function Home() {
+
+  // const [isPlaying, setIsPlaying] = useState(false);
+
+  // const handleAudioProcess = (data) => {
+  //   // You can use the audio data to determine if music is playing
+  //   const isMusicPlaying = data.volume > 0.1; // Adjust the threshold as needed
+
+  //   setIsPlaying(isMusicPlaying);
+  // };
+
+  // useEffect(() => {
+  //   // Set up audio playback here if needed
+  // }, []);
+
   return (
     <main className={styles.main}>
+      {/* <AudioAnalyser
+        audio={'/music.mp3'} // Replace with your actual audio source
+        onAnalyser={handleAudioProcess}
+      /> */}
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
