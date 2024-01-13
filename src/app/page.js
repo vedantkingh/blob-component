@@ -4,7 +4,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>Your Next.js App</h1>
+      <h1>Portfolio</h1>
     </main>
   )
 }
