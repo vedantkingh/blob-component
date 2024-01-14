@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <>
       <Cursor/>
-      <h1>Portfolio</h1>
     </>
   )
 }
