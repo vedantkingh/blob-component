@@ -15,7 +15,8 @@
     "react-audio-analyser": "^1.0.0",
     "react-dom": "^18",
     "react-howler": "^5.2.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "eslint": "^8",
