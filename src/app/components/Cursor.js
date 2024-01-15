@@ -7,8 +7,8 @@ import styles from '@/app/styles/common.module.css';
 const Cursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [speed, setSpeed] = useState(50.0);
-    const [spikes, setSpikes] = useState(1.2);
-    const [processing, setProcessing] = useState(1.1);
+    const [spikes, setSpikes] = useState(0.8);
+    const [processing, setProcessing] = useState(0.8);
 
     const bubbleRef = useRef();
 
