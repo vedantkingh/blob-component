@@ -4,3 +4,14 @@
     position: fixed;
     overflow: hidden;
 }
+
+.play_button {
+    position: absolute;
+    top: 40vh;
+    left: 60vw;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

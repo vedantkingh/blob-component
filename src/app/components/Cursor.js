@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from '@/app/styles/common.module.css';
 import { createNoise2D, createNoise3D } from 'simplex-noise';
 
+
 const Cursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [speed, setSpeed] = useState(60.0);
@@ -14,6 +15,10 @@ const Cursor = () => {
     const bubbleRef = useRef(null);
 
     useEffect(() => {
+        // Velocity
+        const velocity = new THREE.Vector2(0, 0);
+        const dampingFactor = 0.95;
+        
         // Scene & Camera
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -108,8 +113,20 @@ const Cursor = () => {
             const mouseX = ( event.clientX / window.innerWidth ) * 2 - 1;
             const mouseY = - ( event.clientY / window.innerHeight ) * 2 + 1;
             const fovHalfRadians = Math.tan (Math.PI / 180 * 75 / 2);
+
             position.x = mouseX * camera.position.z * fovHalfRadians ;
             position.y = mouseY * camera.position.z * fovHalfRadians / 2;
+
+            // const targetX = mouseX * camera.position.z * fovHalfRadians ;
+            // const targetY = mouseY * camera.position.z * fovHalfRadians / 2;
+
+            // velocity.x += (targetX - position.x) * 0.05;
+            // velocity.y += (targetY - position.y) * 0.05;
+
+            // velocity.x *= dampingFactor;
+            // velocity.y *= dampingFactor;
+            // position.x += velocity.x;
+            // position.y += velocity.y;
         };
         window.addEventListener('mousemove', handleMouseMove, false);
 
