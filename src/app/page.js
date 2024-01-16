@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <Cursor/>
-      <div className={common.play_button}></div>
     </>
   )
 }
