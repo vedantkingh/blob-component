@@ -1,4 +1,4 @@
-This is a repo that I made to build and test an exciting 3D component using Three.JS and R3F which I desired to integrate in my portfolio website.
+This is a repo that I made to build and test an exciting 3D component using Three.JS and R3F which I desired to integrate with my portfolio website.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
